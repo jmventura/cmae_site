@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<oembed><version>1.0</version><provider_name>CMAE</provider_name><provider_url>https://cmae.it/cms</provider_url><author_name>Ufficio Stampa</author_name><author_url>https://cmae.it/cms/author/ufficio-stampa/</author_url><title>INTERNATIONAL BUGATTI MEETING IN IRLANDA - CMAE</title><type>rich</type><width>600</width><height>338</height><html>&lt;blockquote class="wp-embedded-content"&gt;&lt;a href="https://cmae.it/cms/international-bugatti-meeting-in-irlanda-giugno-2019/"&gt;INTERNATIONAL BUGATTI MEETING IN IRLANDA&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script type='text/javascript'&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+/**
+ * WordPress inline HTML embed
+ *
+ * @since 4.4.0
+ * @output wp-includes/js/wp-embed.js
+ *
+ * This file cannot have ampersands in it. This is to ensure
+ * it can be embedded in older versions of WordPress.
+ * See https://core.trac.wordpress.org/changeset/35708.
+ */
+(function ( window, document ) {
+	'use strict';
+
+	var supportedBrowser = false,
+		loaded = false;
+
+		if ( document.querySelector ) {
+			if ( window.addEventListener ) {
+				supportedBrowser = true;
+			}
+		}
+
+	/** @namespace wp */
+	window.wp = window.wp || {};
+
+	if ( !! window.wp.receiveEmbedMessage ) {
+		return;
+	}
+
+	window.wp.receiveEmbedMessage = function( e ) {
+		var data = e.data;
+
+		if ( ! data ) {
+			return;
+		}
+
+		if ( ! ( data.secret || data.message || data.value ) ) {
+			return;
+		}
+
+		if ( /[^a-zA-Z0-9]/.test( data.secret ) ) {
+			return;
+		}
+
+		var iframes = document.querySelectorAll( 'iframe[data-secret="' + data.secret + '"]' ),
+			blockquotes = document.querySelectorAll( 'blockquote[data-secret="' + data.secret + '"]' ),
+			i, source, height, sourceURL, targetURL;
+
+		for ( i = 0; i &lt; blockquotes.length; i++ ) {
+			blockquotes[ i ].style.display = 'none';
+		}
+
+		for ( i = 0; i &lt; iframes.length; i++ ) {
+			source = iframes[ i ];
+
+			if ( e.source !== source.contentWindow ) {
+				continue;
+			}
+
+			source.removeAttribute( 'style' );
+
+			/* Resize the iframe on request. */
+			if ( 'height' === data.message ) {
+				height = parseInt( data.value, 10 );
+				if ( height &gt; 1000 ) {
+					height = 1000;
+				} else if ( ~~height &lt; 200 ) {
+					height = 200;
+				}
+
+				source.height = height;
+			}
+
+			/* Link to a specific URL on request. */
+			if ( 'link' === data.message ) {
+				sourceURL = document.createElement( 'a' );
+				targetURL = document.createElement( 'a' );
+
+				sourceURL.href = source.getAttribute( 'src' );
+				targetURL.href = data.value;
+
+				/* Only continue if link hostname matches iframe's hostname. */
+				if ( targetURL.host === sourceURL.host ) {
+					if ( document.activeElement === source ) {
+						window.top.location.href = data.value;
+					}
+				}
+			}
+		}
+	};
+
+	function onLoad() {
+		if ( loaded ) {
+			return;
+		}
+
+		loaded = true;
+
+		var isIE10 = -1 !== navigator.appVersion.indexOf( 'MSIE 10' ),
+			isIE11 = !!navigator.userAgent.match( /Trident.*rv:11\./ ),
+			iframes = document.querySelectorAll( 'iframe.wp-embedded-content' ),
+			iframeClone, i, source, secret;
+
+		for ( i = 0; i &lt; iframes.length; i++ ) {
+			source = iframes[ i ];
+
+			if ( ! source.getAttribute( 'data-secret' ) ) {
+				/* Add secret to iframe */
+				secret = Math.random().toString( 36 ).substr( 2, 10 );
+				source.src += '#?secret=' + secret;
+				source.setAttribute( 'data-secret', secret );
+			}
+
+			/* Remove security attribute from iframes in IE10 and IE11. */
+			if ( ( isIE10 || isIE11 ) ) {
+				iframeClone = source.cloneNode( true );
+				iframeClone.removeAttribute( 'security' );
+				source.parentNode.replaceChild( iframeClone, source );
+			}
+		}
+	}
+
+	if ( supportedBrowser ) {
+		window.addEventListener( 'message', window.wp.receiveEmbedMessage, false );
+		document.addEventListener( 'DOMContentLoaded', onLoad, false );
+		window.addEventListener( 'load', onLoad, false );
+	}
+})( window, document );
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;iframe sandbox="allow-scripts" security="restricted" src="https://cmae.it/cms/international-bugatti-meeting-in-irlanda-giugno-2019/embed/" width="600" height="338" title="&#x201C;INTERNATIONAL BUGATTI MEETING IN IRLANDA&#x201D; &#x2014; CMAE" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"&gt;&lt;/iframe&gt;</html><thumbnail_url>https://cmae.it/cms/wp-content/uploads/2019/06/PHOTO-2019-06-05-12-10-26-5.jpg</thumbnail_url><thumbnail_width>1024</thumbnail_width><thumbnail_height>768</thumbnail_height><description>[et_pb_section bb_built=&#x201D;1&#x2033; fullwidth=&#x201D;on&#x201D; specialty=&#x201D;off&#x201D; next_background_color=&#x201D;#000000&#x2033; _builder_version=&#x201D;3.22.7&#x2033; animation_style=&#x201D;slide&#x201D; animation_duration=&#x201D;2000ms&#x201D; animation_direction=&#x201D;left&#x201D; custom_margin=&#x201D;30px|-400px||-100px&#x201D; custom_margin_phone=&#x201D;90px|-500px||-50px&#x201D; custom_margin_last_edited=&#x201D;on|tablet&#x201D; custom_margin_tablet=&#x201D;80px|-400px||-100px&#x201D; inner_width=&#x201D;auto&#x201D; inner_max_width=&#x201D;none&#x201D; global_module=&#x201D;29313&#x2033;][et_pb_fullwidth_image global_parent=&#x201D;29313&#x2033; _builder_version=&#x201D;3.22.7&#x2033; src=&#x201D;https://cmae.it/cms/wp-content/uploads/2019/02/CMAE-60.jpg&#x201D; z_index_tablet=&#x201D;500&#x2033; /][/et_pb_section][et_pb_section bb_built=&#x201D;1&#x2033; inner_width=&#x201D;auto&#x201D; inner_max_width=&#x201D;none&#x201D; prev_background_color=&#x201D;#000000&#x2033;][et_pb_row][et_pb_column type=&#x201D;4_4&#x2033;][et_pb_text _builder_version=&#x201D;3.22.7&#x2033; text_text_shadow_horizontal_length=&#x201D;text_text_shadow_style,%91object Object%93&#x2033; text_text_shadow_vertical_length=&#x201D;text_text_shadow_style,%91object Object%93&#x2033; text_text_shadow_blur_strength=&#x201D;text_text_shadow_style,%91object Object%93&#x2033; link_text_shadow_horizontal_length=&#x201D;link_text_shadow_style,%91object Object%93&#x2033; link_text_shadow_vertical_length=&#x201D;link_text_shadow_style,%91object Object%93&#x2033; link_text_shadow_blur_strength=&#x201D;link_text_shadow_style,%91object Object%93&#x2033; ul_text_shadow_horizontal_length=&#x201D;ul_text_shadow_style,%91object Object%93&#x2033; ul_text_shadow_vertical_length=&#x201D;ul_text_shadow_style,%91object Object%93&#x2033; ul_text_shadow_blur_strength=&#x201D;ul_text_shadow_style,%91object Object%93&#x2033; ol_text_shadow_horizontal_length=&#x201D;ol_text_shadow_style,%91object Object%93&#x2033; ol_text_shadow_vertical_length=&#x201D;ol_text_shadow_style,%91object Object%93&#x2033; ol_text_shadow_blur_strength=&#x201D;ol_text_shadow_style,%91object Object%93&#x2033; quote_text_shadow_horizontal_length=&#x201D;quote_text_shadow_style,%91object Object%93&#x2033; quote_text_shadow_vertical_length=&#x201D;quote_text_shadow_style,%91object Object%93&#x2033; [&hellip;]</description></oembed>

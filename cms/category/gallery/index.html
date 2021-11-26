@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://cmae.it/cms/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var et_site_url='https://cmae.it/cms';var et_post_id='0';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script>
+	<!-- This site is optimized with the Yoast SEO plugin v14.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Gallery Archivi - CMAE</title>
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="index.html" />
+	<link rel="next" href="page/2/index.html" />
+	<meta property="og:locale" content="it_IT" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Gallery Archivi - CMAE" />
+	<meta property="og:url" content="https://cmae.it/cms/category/gallery/" />
+	<meta property="og:site_name" content="CMAE" />
+	<meta name="twitter:card" content="summary" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://cmae.it/cms/#website","url":"https://cmae.it/cms/","name":"CMAE","description":"Club Milanese Automotoveicoli d&#039;Epoca","potentialAction":[{"@type":"SearchAction","target":"https://cmae.it/cms/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"it-IT"},{"@type":"CollectionPage","@id":"https://cmae.it/cms/category/gallery/#webpage","url":"https://cmae.it/cms/category/gallery/","name":"Gallery Archivi - CMAE","isPartOf":{"@id":"https://cmae.it/cms/#website"},"inLanguage":"it-IT"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='https://www.googletagmanager.com' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com' />
+<link rel='dns-prefetch' href='https://s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="CMAE &raquo; Feed" href="../../feed/index.rss" />
+<link rel="alternate" type="application/rss+xml" title="CMAE &raquo; Feed dei commenti" href="../../comments/feed/index.rss" />
+<link rel="alternate" type="application/rss+xml" title="CMAE &raquo; Gallery Feed della categoria" href="feed/index.rss" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/cmae.it\/cms\/wp-includes\/js\/wp-emoji.js?ver=5.4.8","twemoji":"https:\/\/cmae.it\/cms\/wp-includes\/js\/twemoji.js?ver=5.4.8"}};
+			/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	// Create a canvas element for testing native browser support of emoji.
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {number[]} set1 Set of Emoji character codes.
+	 * @param {number[]} set2 Set of Emoji character codes.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detects if the browser supports rendering emoji or flag emoji.
+	 *
+	 * Flag emoji are a single glyph made of two characters, so some browsers
+	 * (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. This flag is shortlisted for the Emoji 13 spec,
+				 * but has landed in Twemoji early, so we can add support for it, too.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0x1F3F3, 0xFE0F, 0x200D, 0x26A7, 0xFE0F ],
+					[ 0x1F3F3, 0xFE0F, 0x200B, 0x26A7, 0xFE0F ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDDFA, 0xD83C, 0xDDF3 ],
+					[ 0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F ],
+					[ 0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Love is love.
+				 *
+				 * To test for Emoji 12 support, try to render a new emoji: men holding hands, with different skin
+				 * tone modifiers.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[0xD83D, 0xDC68, 0xD83C, 0xDFFE, 0x200D, 0xD83E, 0xDD1D, 0x200D, 0xD83D, 0xDC68, 0xD83C, 0xDFFC],
+					[0xD83D, 0xDC68, 0xD83C, 0xDFFE, 0x200B, 0xD83E, 0xDD1D, 0x200B, 0xD83D, 0xDC68, 0xD83C, 0xDFFC]
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {Object} src The url where the script is located.
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	/*
+	 * Tests the browser support for flag emojis and other emojis, and adjusts the
+	 * support settings accordingly.
+	 */
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	// Sets DOMReady to false and assigns a ready function to settings.
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	// When the browser can not render everything we need to load a polyfill.
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		/*
+		 * Cross-browser version of adding a dom ready event.
+		 */
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<meta content="Divi Child v.1.0.0" name="generator"/><style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='validate-engine-css-css'  href='../../wp-content/plugins/wysija-newsletters/css/validationEngine.jquery%EF%B9%96ver=2.16.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='../../wp-includes/css/dist/block-library/style%EF%B9%96ver=5.4.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='../../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style%EF%B9%96ver=1626332225.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../../wp-content/plugins/contact-form-7/includes/css/styles%EF%B9%96ver=5.1.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='../../wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public%EF%B9%96ver=1.8.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='../../wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr%EF%B9%96ver=1.8.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-layout%EF%B9%96ver=4.1.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen%EF%B9%96ver=4.1.2.css' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='../../wp-content/plugins/woocommerce/assets/css/woocommerce%EF%B9%96ver=4.1.2.css' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='et_monarch-css-css'  href='../../wp-content/plugins/monarch/css/style%EF%B9%96ver=1.4.12.css' type='text/css' media='all' />
+<link rel='stylesheet' id='et-gf-open-sans-css'  href='../../../../fonts.googleapis.com/css/index%EF%B9%96family=Open+Sans%EF%B9%95400,700.css' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-fonts-css'  href='../../../../fonts.googleapis.com/css/index%EF%B9%96family=Open+Sans%EF%B9%95300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext.css' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='../../wp-content/themes/Divi-Child/style%EF%B9%96ver=4.4.7.css' type='text/css' media='all' />
+<link rel='stylesheet' id='newsletter-css'  href='../../wp-content/plugins/newsletter/style%EF%B9%96ver=7.0.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='../../wp-content/plugins/tablepress/css/default%EF%B9%96ver=1.11.css' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css'  href='../../wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive%EF%B9%96ver=4.4.7.css' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='../../wp-content/themes/Divi/includes/builder/styles/magnific_popup%EF%B9%96ver=4.4.7.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='../../wp-includes/css/dashicons%EF%B9%96ver=5.4.8.css' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery%EF%B9%96ver=1.12.4-wp.js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate%EF%B9%96ver=1.4.1.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/cmae.it\/cms\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public%EF%B9%96ver=1.8.8.js'></script>
+<script type='text/javascript' src='../../../../www.googletagmanager.com/gtag/js/index%EF%B9%96id=G-478P474NQM&amp;ver=5.4.8.js'></script>
+<script type='text/javascript'>
+function shouldTrack(){
+var trackLoggedIn = true;
+var loggedIn = false;
+if(!loggedIn){
+return true;
+} else if( trackLoggedIn ) {
+return true;
+}
+return false;
+}
+function hasWKGoogleAnalyticsCookie() {
+return (new RegExp('wp_wk_ga_untrack_' + document.location.hostname)).test(document.cookie);
+}
+if (!hasWKGoogleAnalyticsCookie() && shouldTrack()) {
+//Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-478P474NQM', { 'anonymize_ip': true });
+}
+</script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/core/admin/js/es6-promise.auto.min%EF%B9%96ver=5.4.8.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_core_api_spam_recaptcha = {"site_key":"","page_action":{"action":"1_coppa_giova_mi_tutte_le_foto"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/core/admin/js/recaptcha%EF%B9%96ver=5.4.8.js'></script>
+<link rel='https://api.w.org/' href='../../wp-json/index.json' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php%EF%B9%96rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.8" />
+<meta name="generator" content="WooCommerce 4.1.2" />
+<style type="text/css" id="et-social-custom-css">
+				 
+			</style><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="shortcut icon" href="../../wp-content/uploads/2018/05/favicon.png" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+			<script type="text/javascript">
+			var cli_flush_cache = true;
+		</script>
+		<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="../../wp-content/et-cache/global/et-divi-customizer-global-1637870315163.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /></head>
+<body class="archive category category-gallery category-127 theme-Divi woocommerce-no-js et_monarch et_pb_button_helper_class et_transparent_nav et_fullwidth_nav et_fixed_nav et_show_nav et_hide_primary_logo et_hide_fixed_logo et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="92">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="../../index.html">
+						<img src="../../wp-content/uploads/2018/05/logo.png" alt="CMAE" id="logo" data-height-percentage="54" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="92" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-29358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29358"><a href="../../auto-3/index.html">Auto</a></li>
+<li id="menu-item-29357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29357"><a href="../../moto-3/index.html">Moto</a></li>
+<li id="menu-item-29355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29355"><a href="../../giovani/index.html">Giovani</a></li>
+<li id="menu-item-29356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29356"><a href="../../squadra-corse/index.html">Squadra Corse</a></li>
+<li id="menu-item-182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-182"><a href="../../index.html">Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-29742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29742"><a href="#">RINNOVI E ISCRIZIONI</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5307"><a href="../../come-iscriversi/index.html">Come iscriversi</a></li>
+		<li id="menu-item-29424" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29424"><a href="https://iscrizioni.cmae.it/#/">Iscrizioni e rinnovi online</a></li>
+	</ul>
+</li>
+	<li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-183"><a href="../../benvenuto/index.html">Benvenuto</a>
+	<ul class="sub-menu">
+		<li id="menu-item-29830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29830"><a href="../../chi-siamo/index.html">Chi siamo</a></li>
+		<li id="menu-item-29788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29788"><a href="../../consiglio-direttivo/index.html">Consiglio direttivo</a></li>
+		<li id="menu-item-5304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5304"><a href="../../il-nostro-regolamento/index.html">Il nostro Regolamento</a></li>
+		<li id="menu-item-29439" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29439"><a href="../../wp-content/uploads/2014/07/Nuovo-Statuto-CMAE-approvato-Assemblea-18-marzo-2015-_2_.pdf">Il nostro statuto</a></li>
+	</ul>
+</li>
+	<li id="menu-item-29792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29792"><a href="#">Orari segreteria</a>
+	<ul class="sub-menu">
+		<li id="menu-item-29793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29793"><a href="#">Lunedì: 16.00 &#8211; 20.00</a></li>
+		<li id="menu-item-29794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29794"><a href="#">Martedì: 10.00 &#8211; 14.00</a></li>
+		<li id="menu-item-29795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29795"><a href="#">Mercoledì: 16.00 &#8211; 20.00</a></li>
+	</ul>
+</li>
+	<li id="menu-item-276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-276"><a href="#">Servizi</a>
+	<ul class="sub-menu">
+		<li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="../../attestato-di-storicita/index.html">Attestato di storicità</a></li>
+		<li id="menu-item-186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-186"><a href="../../certificato-di-rilevanza-storica-e-collezionistica/index.html">Certificato di rilevanza storica e collezionistica</a></li>
+		<li id="menu-item-187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187"><a href="../../certificato-didentita-omologazione/index.html">Certificato d&#8217;Identità (Omologazione)</a></li>
+		<li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="../../carta-didentita-fiva/index.html">Carta d’Identità FIVA</a></li>
+		<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="../../servizi-vari/index.html">Servizi vari</a></li>
+		<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="../../costi-dei-documenti/index.html">Costi dei documenti</a></li>
+		<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="../../norme-sulla-circolazione/index.html">Norme sulla circolazione</a></li>
+	</ul>
+</li>
+	<li id="menu-item-34695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34695"><a href="../../comunicazioni/index.html">Comunicazioni ai Soci</a></li>
+	<li id="menu-item-300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-300"><a href="#">Eventi</a>
+	<ul class="sub-menu">
+		<li id="menu-item-29464" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29464"><a href="../../manifestazioni/index.html">Manifestazioni</a></li>
+		<li id="menu-item-29465" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29465"><a href="../../incontri-culturali/index.html">Incontri culturali</a></li>
+		<li id="menu-item-29466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29466"><a href="../../altri-eventi/index.html">Mondo del Club</a></li>
+		<li id="menu-item-35934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35934"><a href="../../altri-eventi-2/index.html">Altri eventi</a></li>
+	</ul>
+</li>
+	<li id="menu-item-29471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29471"><a href="../../noi-cmae/index.html">Noi Cmae</a></li>
+	<li id="menu-item-29533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29533"><a href="../../galleria/index.html">Gallery</a></li>
+	<li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-281"><a href="#">Compro &#038; Vendo</a>
+	<ul class="sub-menu">
+		<li id="menu-item-29495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29495"><a href="../../inserzioni/index.html">Inserzioni</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5662"><a href="../../contatti/index.html">Contatti</a></li>
+</ul>
+</li>
+<li id="menu-item-34698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34698"><a href="../../area-media/index.html">Area Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-29494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29494"><a href="../../comunicati-stampa/index.html">Comunicati stampa</a></li>
+	<li id="menu-item-34738" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34738"><a href="../../rassegna-stampa/index.html">Rassegna Stampa</a></li>
+</ul>
+</li>
+<li id="menu-item-38265" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38265"><a href="https://iscrizioni.cmae.it/">Area Riservata Soci</a></li>
+</ul>						</nav>
+					
+					<a href="../../carrello/index.html" class="et-cart-info">
+				<span></span>
+			</a>
+					
+										<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Seleziona una pagina</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="../../index.html">
+					<input type="search" class="et-search-field" placeholder="Cerca &hellip;" value="" name="s" title="Cerca:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+		
+					<article id="post-39558" class="et_pb_post post-39558 post type-post status-publish format-gallery has-post-thumbnail hentry category-gallery post_format-post-format-gallery">
+
+				<div class="et_pb_slider et_pb_slider_fullwidth_off et_pb_gallery_post_type">
+				<div class="et_pb_slides">
+					<div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-16-02_2-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9643-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/72591531-3ded-4258-82e2-8e0d06fc8b2d.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9356-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9435-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9474.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9354.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9658.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0285-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0442-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0471-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0478-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0481-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0492.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0535-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0581-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0585-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0587.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0624-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9375.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9403-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9448-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9472-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9512-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9569.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9663-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9674-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9695-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9741-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9744-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9766-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9934-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/7PAB_9619-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/7PAB_9807-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/7PAB_9871-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_0205.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_0256-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_0287-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-09-39-58-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-09-41-49-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0019.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-09-40-17-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-09-38-21-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-09-37-57-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_0330-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_0345-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_0538-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_0560-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_0643-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_9385-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/8PAB_9411-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/077937D5-664A-4467-B711-87A4A326540E-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Commissario-Manifestazioni-ASI-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-06-49-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0768.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-55-02-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9505-1-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6258-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6273-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6288-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6296-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6316-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6321-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6334-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6348-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_8188.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0103.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0421-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0068.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_2198-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_2212-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_2215-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_8150.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/5PAB_0327-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/5PAB_0427.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/5PAB_0485.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0034.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0091-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0202-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6318-1-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0247-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0452.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_0786.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9563-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/6PAB_9698-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/7PAB_0198-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/A-scaled.jpeg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-04-32-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/B1-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/C-scaled.jpeg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6290-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6302-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6344-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0043.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0098.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0099.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0111.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_2219-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_8162.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_8164.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-09-38-49-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-03-27-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-03-54-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-04-07-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6284-1-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-07-26-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-07-57-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-11-52-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-12-17-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-13-47-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-13-53-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-14-11-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-16-02-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-16-50-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-17-08-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-17-17-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-21-13-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-22-59-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-23-35-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-24-50-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-25-26-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-25-40-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-26-43-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-29-20-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-30-23-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-31-04-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-31-14-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-31-32-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-38-25-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-38-46-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-44-30-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-44-41-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-48-18-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-48-52-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-54-46-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-10-47-50-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0300.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0282.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0280.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0305.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Emma-Pisati.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0336.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_0310.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/IMG_6927-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/DSC_6251_1-scaled.jpg);"></div><div class="et_pb_slide" style="background: url(../../wp-content/uploads/2021/08/Foto-03-07-21-09-56-39-scaled.jpg);"></div>
+				</div>
+			</div>
+															<h2 class="entry-title"><a href="../../1-coppa-giova-mi_tutte-le-foto/index.html">1° COPPA &#8220;GIOVA-MI&#8221;_TUTTE LE FOTO</a></h2>
+					
+					<p class="post-meta"><span class="published">Ago 1, 2021</span> | <a href="index.html" rel="category tag">Gallery</a></p>
+<p>&nbsp;</p>
+				
+					</article> <!-- .et_pb_post -->
+			
+					<article id="post-39232" class="et_pb_post post-39232 post type-post status-publish format-standard has-post-thumbnail hentry category-gallery">
+
+											<a class="entry-featured-image-url" href="../../il-cmae-millemiglia-2020/index.html">
+								<img src="../../wp-content/uploads/2021/01/L1050757copiaLOW-CMAE-1080x675.jpg" alt="IL CMAE @MILLEMIGLIA 2020" class="" width='1080' height='675' srcset="../../wp-content/uploads/2021/01/L1050757copiaLOW-CMAE-980x654.jpg 980w, ../../wp-content/uploads/2021/01/L1050757copiaLOW-CMAE-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" />							</a>
+					
+															<h2 class="entry-title"><a href="../../il-cmae-millemiglia-2020/index.html">IL CMAE @MILLEMIGLIA 2020</a></h2>
+					
+					<p class="post-meta"><span class="published">Gen 13, 2021</span> | <a href="index.html" rel="category tag">Gallery</a></p><p><div class="et_pb_section et_pb_section_1 et_animated et_pb_fullwidth_section et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_module et_pb_fullwidth_image et_pb_fullwidth_image_0">
+				
+				
+				<img src="../../wp-content/uploads/2018/05/intro-CMAE.jpg" alt="" title="" srcset="../../wp-content/uploads/2018/05/intro-CMAE.jpg 2551w, ../../wp-content/uploads/2018/05/intro-CMAE-300x20.jpg 300w, ../../wp-content/uploads/2018/05/intro-CMAE-768x52.jpg 768w, ../../wp-content/uploads/2018/05/intro-CMAE-1024x69.jpg 1024w, ../../wp-content/uploads/2018/05/intro-CMAE-600x40.jpg 600w, ../../wp-content/uploads/2018/05/intro-CMAE-1080x73.jpg 1080w, ../../wp-content/uploads/2018/05/intro-CMAE-510x34.jpg 510w" sizes="(max-width: 2551px) 100vw, 2551px" />
+			
+			</div>
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_2 et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p>Una 1000 Miglia diversa dal solito, immancabilmente condizionata dall&#8217;emergenza sanitaria &#8211; per questo l&#8217;edizione 2020 è andata in scena a ottobre, rispetto al tradizionale svolgimento del mese di maggio &#8211; ma non per questo meno sentita o celebrata, anzi. Organizzatori e concorrenti hanno fatto il possibile per mantenere viva la tradizione della manifestazione, cercando una normalità che tanto è mancata negli ultimi mesi. L&#8217;evento si è svolto nel pieno rispetto delle regole, riuscendo altresì a tenere vivi entusiasmo e partecipazione, grazie a un grandissimo impegno da parte di tutti. Tra loro, anche un discreto numero di soci CMAE, che hanno colto l&#8217;occasione per riaccendere i motori delle proprie amate vetture d&#8217;epoca in occasione di uno degli eventi più attesi dell&#8217;anno, che fortunatamente il virus non è riuscito a fermare.</p>
+<p>Foto: Luca Danilo Orsi</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_gallery et_pb_gallery_0  et_pb_bg_layout_light et_pb_gallery_grid">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="60"><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_0">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/B0001511copiaLOW.jpg" title="B0001511copiaLOW">
+					<img src="../../wp-content/uploads/2021/01/B0001511copiaLOW-400x284.jpg" srcset="../../wp-content/uploads/2021/01/B0001511copiaLOW.jpg 479w, ../../wp-content/uploads/2021/01/B0001511copiaLOW-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_1">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/B0001512copiaLOW.jpg" title="B0001512copiaLOW">
+					<img src="../../wp-content/uploads/2021/01/B0001512copiaLOW-400x284.jpg" srcset="../../wp-content/uploads/2021/01/B0001512copiaLOW.jpg 479w, ../../wp-content/uploads/2021/01/B0001512copiaLOW-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_2">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/B0001549copiaLOW-2.jpg" title="B0001549copiaLOW">
+					<img src="../../wp-content/uploads/2021/01/B0001549copiaLOW-2-400x284.jpg" srcset="../../wp-content/uploads/2021/01/B0001549copiaLOW-2.jpg 479w, ../../wp-content/uploads/2021/01/B0001549copiaLOW-2-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_3">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/B0001590copiaLOW.jpg" title="B0001590copiaLOW">
+					<img src="../../wp-content/uploads/2021/01/B0001590copiaLOW-400x284.jpg" srcset="../../wp-content/uploads/2021/01/B0001590copiaLOW.jpg 479w, ../../wp-content/uploads/2021/01/B0001590copiaLOW-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_4">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/B0001594copiaLOW-2.jpg" title="B0001594copiaLOW">
+					<img src="../../wp-content/uploads/2021/01/B0001594copiaLOW-2-400x284.jpg" srcset="../../wp-content/uploads/2021/01/B0001594copiaLOW-2.jpg 479w, ../../wp-content/uploads/2021/01/B0001594copiaLOW-2-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_5">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050269copiaLOW-CMAE.jpg" title="L1050269copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050269copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050269copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050269copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_6">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050273copiaLOW-CMAE.jpg" title="L1050273copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050273copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050273copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050273copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_7">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050334copiaLOW-CMAE-2.jpg" title="L1050334copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050334copiaLOW-CMAE-2-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050334copiaLOW-CMAE-2.jpg 479w, ../../wp-content/uploads/2021/01/L1050334copiaLOW-CMAE-2-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_8">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050345copiaLOW-CMAE-2.jpg" title="L1050345copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050345copiaLOW-CMAE-2-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050345copiaLOW-CMAE-2.jpg 479w, ../../wp-content/uploads/2021/01/L1050345copiaLOW-CMAE-2-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_9">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050500copiaLOW-CMAE-2.jpg" title="L1050500copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050500copiaLOW-CMAE-2-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050500copiaLOW-CMAE-2.jpg 479w, ../../wp-content/uploads/2021/01/L1050500copiaLOW-CMAE-2-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_10">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050721copiaLOW-CMAE.jpg" title="L1050721copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050721copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050721copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050721copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_11">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050736copiaLOW-CMAE-2.jpg" title="L1050736copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050736copiaLOW-CMAE-2-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050736copiaLOW-CMAE-2.jpg 479w, ../../wp-content/uploads/2021/01/L1050736copiaLOW-CMAE-2-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_12">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050750copiaLOW-CMAE.jpg" title="L1050750copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050750copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050750copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050750copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_13">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050757copiaLOW-CMAE.jpg" title="L1050757copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050757copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050757copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050757copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_14">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050762copiaLOW-CMAE.jpg" title="L1050762copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050762copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050762copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050762copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_15">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050766copiaLOW-CMAE.jpg" title="L1050766copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050766copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050766copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050766copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_16">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050782copiaLOW-CMAE.jpg" title="L1050782copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050782copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050782copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050782copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_17">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050804copiaLOW-CMAE.jpg" title="L1050804copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050804copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050804copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050804copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_18">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050806copiaLOW-CMAE.jpg" title="L1050806copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050806copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050806copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050806copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_19">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050810copiaLOW-CMAE.jpg" title="L1050810copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050810copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050810copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050810copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_20">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050836copiaLOW-CMAE.jpg" title="L1050836copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050836copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050836copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050836copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_21">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050842copiaLOW-CMAE.jpg" title="L1050842copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050842copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050842copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050842copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_22">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050846copiaLOW-CMAE.jpg" title="L1050846copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050846copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050846copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050846copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_23">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050874copiaLOW-CMAE.jpg" title="L1050874copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050874copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050874copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050874copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_24">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050920copiaLOW-CMAE.jpg" title="L1050920copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050920copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050920copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050920copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_25">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050926copiaLOW-CMAE.jpg" title="L1050926copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050926copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050926copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050926copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_26">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/L1050934copiaLOW-CMAE.jpg" title="L1050934copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/L1050934copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/L1050934copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/L1050934copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_27">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/S1000320copiaLOW-CMAE.jpg" title="S1000320copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/S1000320copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/S1000320copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/S1000320copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_28">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/S1000330copiaLOW-CMAE.jpg" title="S1000330copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/S1000330copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/S1000330copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/S1000330copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_29">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/S1000333copiaLOW-CMAE.jpg" title="S1000333copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/S1000333copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/S1000333copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/S1000333copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_30">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/S1000335copiaLOW-CMAE.jpg" title="S1000335copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/S1000335copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/S1000335copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/S1000335copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_31">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/S1000342copiaLOW-CMAE.jpg" title="S1000342copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/S1000342copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/S1000342copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/S1000342copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_32">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/S1000346copiaLOW-CMAE.jpg" title="S1000346copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/S1000346copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/S1000346copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/S1000346copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_0_33">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2021/01/S1000356copiaLOW-CMAE.jpg" title="S1000356copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2021/01/S1000356copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2021/01/S1000356copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2021/01/S1000356copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div></div><!-- .et_pb_gallery_items --><div class="et_pb_gallery_pagination"></div></div><!-- .et_pb_gallery -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --></p>
+				
+					</article> <!-- .et_pb_post -->
+			
+					<article id="post-38894" class="et_pb_post post-38894 post type-post status-publish format-standard has-post-thumbnail hentry category-gallery">
+
+											<a class="entry-featured-image-url" href="../../milano-autoclassica-2020-sabato/index.html">
+								<img src="../../wp-content/uploads/2020/10/SON3614copiaLOW-CMAE-1080x675.jpg" alt="MILANO AUTOCLASSICA 2020 &#8211; Sabato" class="" width='1080' height='675' srcset="../../wp-content/uploads/2020/10/SON3614copiaLOW-CMAE-980x654.jpg 980w, ../../wp-content/uploads/2020/10/SON3614copiaLOW-CMAE-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" />							</a>
+					
+															<h2 class="entry-title"><a href="../../milano-autoclassica-2020-sabato/index.html">MILANO AUTOCLASSICA 2020 &#8211; Sabato</a></h2>
+					
+					<p class="post-meta"><span class="published">Ott 7, 2020</span> | <a href="index.html" rel="category tag">Gallery</a></p><p><div class="et_pb_section et_pb_section_4 et_animated et_pb_fullwidth_section et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_module et_pb_fullwidth_image et_pb_fullwidth_image_1">
+				
+				
+				<img src="../../wp-content/uploads/2018/05/intro-CMAE.jpg" alt="" title="" srcset="../../wp-content/uploads/2018/05/intro-CMAE.jpg 2551w, ../../wp-content/uploads/2018/05/intro-CMAE-300x20.jpg 300w, ../../wp-content/uploads/2018/05/intro-CMAE-768x52.jpg 768w, ../../wp-content/uploads/2018/05/intro-CMAE-1024x69.jpg 1024w, ../../wp-content/uploads/2018/05/intro-CMAE-600x40.jpg 600w, ../../wp-content/uploads/2018/05/intro-CMAE-1080x73.jpg 1080w, ../../wp-content/uploads/2018/05/intro-CMAE-510x34.jpg 510w" sizes="(max-width: 2551px) 100vw, 2551px" />
+			
+			</div>
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_5 et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p>L&#8217;edizione 2020 di Milano AutoClassica si è svolta quest&#8217;anno con qualche mese di anticipo sul calendario ufficiale, in un <em>annus horribilis</em> in cui tutto il mondo si è dovuto adattare, e reinventare, a seguito della pandemia da coronavirus. L&#8217;immancabile appuntamento milanese per i patiti del Classic si è svolto dal 25 al 27 settembre, nell&#8217;ormai consolidata cornice di Fiera Milano Rho. Nello spazio occupato da una vasta selezione di espositori privati, venditori di memorabilia, grandi marchi del lusso a quattro ruote, Club, e dagli stand di ACI e ASI, dove si sono alternati i numerosi incontri del weekend, non sono mancati i visitatori, diligentemente sparpagliati e muniti di mascherina, alla ricerca dell&#8217;auto più desiderata, in un tripudio di supercar e modelli d&#8217;antan da far girare la testa.</p>
+<p>Foto: Luca Danilo Orsi</p></div>
+			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_gallery et_pb_gallery_1  et_pb_bg_layout_light et_pb_gallery_grid">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="50"><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_0">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3501copiaLOW-CMAE.jpg" title="_SON3501copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3501copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3501copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3501copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_1">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3504copiaLOW-CMAE.jpg" title="_SON3504copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3504copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3504copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3504copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_2">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3515copiaLOW-CMAE.jpg" title="_SON3515copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3515copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3515copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3515copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_3">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3530copiaLOW-CMAE.jpg" title="_SON3530copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3530copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3530copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3530copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_4">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3531copiaLOW-CMAE.jpg" title="_SON3531copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3531copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3531copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3531copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_5">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3538copiaLOW-CMAE.jpg" title="_SON3538copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3538copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3538copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3538copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_6">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3547copiaLOW-CMAE.jpg" title="_SON3547copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3547copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3547copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3547copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_7">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3549copiaLOW-CMAE.jpg" title="_SON3549copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3549copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3549copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3549copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_8">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3550copiaLOW-CMAE.jpg" title="_SON3550copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3550copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3550copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3550copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_9">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3561copiaLOW-CMAE.jpg" title="_SON3561copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3561copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3561copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3561copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_10">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3573copiaLOW-CMAE.jpg" title="_SON3573copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3573copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3573copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3573copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_11">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3592copiaLOW-CMAE.jpg" title="_SON3592copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3592copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3592copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3592copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_12">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3598copiaLOW-CMAE.jpg" title="_SON3598copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3598copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3598copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3598copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_13">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3600copiaLOW-CMAE.jpg" title="_SON3600copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3600copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3600copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3600copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_14">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3605copiaLOW-CMAE.jpg" title="_SON3605copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3605copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3605copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3605copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_15">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3614copiaLOW-CMAE.jpg" title="_SON3614copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3614copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3614copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3614copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_16">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3656copiaLOW-CMAE.jpg" title="_SON3656copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3656copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3656copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3656copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_17">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3489copiaLOW-CMAE.jpg" title="_SON3489copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3489copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3489copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3489copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_18">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3491copiaLOW-CMAE.jpg" title="_SON3491copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3491copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3491copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3491copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_19">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3493copiaLOW-CMAE.jpg" title="_SON3493copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3493copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3493copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3493copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_20">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3495copiaLOW-CMAE.jpg" title="_SON3495copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3495copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3495copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3495copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_21">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3548copiaLOW-CMAE.jpg" title="_SON3548copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3548copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3548copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3548copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_22">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3641copiaLOW-CMAE.jpg" title="_SON3641copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3641copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3641copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3641copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_23">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3645copiaLOW-CMAE.jpg" title="_SON3645copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3645copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3645copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3645copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_24">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3649copiaLOW-CMAE.jpg" title="_SON3649copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3649copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3649copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3649copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_25">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3652copiaLOW-CMAE.jpg" title="_SON3652copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3652copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3652copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3652copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div></div><!-- .et_pb_gallery_items --><div class="et_pb_gallery_pagination"></div></div><!-- .et_pb_gallery -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --></p>
+				
+					</article> <!-- .et_pb_post -->
+			
+					<article id="post-38937" class="et_pb_post post-38937 post type-post status-publish format-standard has-post-thumbnail hentry category-gallery">
+
+											<a class="entry-featured-image-url" href="../../milano-autoclassica-2020-domenica/index.html">
+								<img src="../../wp-content/uploads/2020/10/SON1437copiaLOW-CMAE-1080x675.jpg" alt="MILANO AUTOCLASSICA 2020 &#8211; Domenica" class="" width='1080' height='675' srcset="../../wp-content/uploads/2020/10/SON1437copiaLOW-CMAE-980x654.jpg 980w, ../../wp-content/uploads/2020/10/SON1437copiaLOW-CMAE-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" />							</a>
+					
+															<h2 class="entry-title"><a href="../../milano-autoclassica-2020-domenica/index.html">MILANO AUTOCLASSICA 2020 &#8211; Domenica</a></h2>
+					
+					<p class="post-meta"><span class="published">Ott 7, 2020</span> | <a href="index.html" rel="category tag">Gallery</a></p><p><div class="et_pb_section et_pb_section_7 et_animated et_pb_fullwidth_section et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_module et_pb_fullwidth_image et_pb_fullwidth_image_2">
+				
+				
+				<img src="../../wp-content/uploads/2018/05/intro-CMAE.jpg" alt="" title="" srcset="../../wp-content/uploads/2018/05/intro-CMAE.jpg 2551w, ../../wp-content/uploads/2018/05/intro-CMAE-300x20.jpg 300w, ../../wp-content/uploads/2018/05/intro-CMAE-768x52.jpg 768w, ../../wp-content/uploads/2018/05/intro-CMAE-1024x69.jpg 1024w, ../../wp-content/uploads/2018/05/intro-CMAE-600x40.jpg 600w, ../../wp-content/uploads/2018/05/intro-CMAE-1080x73.jpg 1080w, ../../wp-content/uploads/2018/05/intro-CMAE-510x34.jpg 510w" sizes="(max-width: 2551px) 100vw, 2551px" />
+			
+			</div>
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_8 et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p>Bello e importante, al centro del padiglione dedicato ai veicoli d&#8217;epoca, lo spazio riservato al CMAE, che per celebrare i 110 anni di Alfa Romeo ha tirato a lucido alcuni tra i modelli più iconici dello storico marchio del Biscione, anche in questa occasione messi a disposizione da alcuni soci. A fare la parte del leone, la Alfa Romeo 6C 2500 Super Sport del 1950, carrozzeria Touring Superleggera modello Villa d’Este, e l&#8217;Alfa Romeo 155 Q4, esemplare unico al mondo, che nel 1992 conquistò il record di velocità, ancora oggi imbattuto, nella categoria G/PS. Quest&#8217;ultima prestata dagli amici del Museo Fratelli Cozzi, con cui il CMAE ha organizzato due giornate di raduno con visita alla collezione e in fiera, nel nome dell&#8217;hashtag ufficiale del weekend #insiemeperilclassico. Per l&#8217;occasione, in entrambe le giornate, è stata inoltre premiata l&#8217;auto più antica tra quelle dei soci presenti.</p>
+<p>Foto: Luca Danilo Orsi</p></div>
+			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_gallery et_pb_gallery_2  et_pb_bg_layout_light et_pb_gallery_grid">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="50"><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_0">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1421copiaLOW-CMAE.jpg" title="_SON1421copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1421copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1421copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1421copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_1">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1422copiaLOW-CMAE.jpg" title="_SON1422copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1422copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1422copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1422copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_2">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1425copiaLOW-CMAE.jpg" title="_SON1425copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1425copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1425copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1425copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_3">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1430copiaLOW-CMAE.jpg" title="_SON1430copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1430copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1430copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1430copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_4">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1433copiaLOW-CMAE.jpg" title="_SON1433copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1433copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1433copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1433copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_5">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1436copiaLOW-CMAE.jpg" title="_SON1436copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1436copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1436copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1436copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_6">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1437copiaLOW-CMAE.jpg" title="_SON1437copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1437copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1437copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1437copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_7">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1445copiaLOW-CMAE.jpg" title="_SON1445copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1445copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1445copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1445copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_8">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1447copiaLOW-CMAE.jpg" title="_SON1447copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1447copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1447copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1447copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_9">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3677copiaLOW-CMAE.jpg" title="_SON3677copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3677copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3677copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3677copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_10">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3683copiaLOW-CMAE.jpg" title="_SON3683copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3683copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3683copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3683copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_11">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3700copiaLOW-CMAE.jpg" title="_SON3700copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3700copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3700copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3700copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_12">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3702copiaLOW-CMAE.jpg" title="_SON3702copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3702copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3702copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3702copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_13">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3709copiaLOW-CMAE.jpg" title="_SON3709copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3709copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3709copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3709copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_14">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3715copiaLOW-CMAE.jpg" title="_SON3715copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3715copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3715copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3715copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_15">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3725copiaLOW-CMAE.jpg" title="_SON3725copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3725copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3725copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3725copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_16">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3739copiaLOW-CMAE.jpg" title="_SON3739copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3739copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3739copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3739copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_17">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3747copiaLOW-CMAE.jpg" title="_SON3747copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3747copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3747copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3747copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_18">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3774copiaLOW-CMAE.jpg" title="_SON3774copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3774copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3774copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3774copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_19">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3776copiaLOW-CMAE.jpg" title="_SON3776copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3776copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3776copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3776copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_20">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3778copiaLOW-CMAE.jpg" title="_SON3778copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3778copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3778copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3778copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_21">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3780copiaLOW-CMAE.jpg" title="_SON3780copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3780copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3780copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3780copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_22">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3784copiaLOW-CMAE.jpg" title="_SON3784copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3784copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3784copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3784copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_23">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON1443copiaLOW-CMAE.jpg" title="_SON1443copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON1443copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON1443copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON1443copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_24">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3687copiaLOW-CMAE.jpg" title="_SON3687copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3687copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3687copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3687copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_25">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3733copiaLOW-CMAE.jpg" title="_SON3733copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3733copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3733copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3733copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_26">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3793copiaLOW-CMAE.jpg" title="_SON3793copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3793copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3793copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3793copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_27">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3797copiaLOW-CMAE.jpg" title="_SON3797copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3797copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3797copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3797copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_28">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/10/SON3800copiaLOW-CMAE.jpg" title="_SON3800copiaLOW CMAE">
+					<img src="../../wp-content/uploads/2020/10/SON3800copiaLOW-CMAE-400x284.jpg" srcset="../../wp-content/uploads/2020/10/SON3800copiaLOW-CMAE.jpg 479w, ../../wp-content/uploads/2020/10/SON3800copiaLOW-CMAE-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div></div><!-- .et_pb_gallery_items --><div class="et_pb_gallery_pagination"></div></div><!-- .et_pb_gallery -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --></p>
+				
+					</article> <!-- .et_pb_post -->
+			
+					<article id="post-38648" class="et_pb_post post-38648 post type-post status-publish format-standard hentry category-altri-eventi category-auto category-gallery">
+
+				
+															<h2 class="entry-title"><a href="../../raid-reggio-calabria-milano-si-conclude-mercoledi-9-settembre-alle-17-30-presso-la-sede-del-cmae-il-viaggio-del-nostro-socio-corrado-lopresto/index.html">RAID REGGIO CALABRIA-MILANO: SI CONCLUDE AL CMAE IL VIAGGIO DEL NOSTRO SOCIO CORRADO LOPRESTO</a></h2>
+					
+					<p class="post-meta"><span class="published">Set 9, 2020</span> | <a href="../altri-eventi/index.html" rel="category tag">Altri eventi</a>, <a href="../auto/index.html" rel="category tag">Auto</a>, <a href="index.html" rel="category tag">Gallery</a></p><p><div class="et_pb_section et_pb_section_10 et_animated et_pb_fullwidth_section et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_module et_pb_fullwidth_image et_pb_fullwidth_image_3">
+				
+				
+				<img src="../../wp-content/uploads/2018/05/intro-CMAE.jpg" alt="" title="" srcset="../../wp-content/uploads/2018/05/intro-CMAE.jpg 2551w, ../../wp-content/uploads/2018/05/intro-CMAE-300x20.jpg 300w, ../../wp-content/uploads/2018/05/intro-CMAE-768x52.jpg 768w, ../../wp-content/uploads/2018/05/intro-CMAE-1024x69.jpg 1024w, ../../wp-content/uploads/2018/05/intro-CMAE-600x40.jpg 600w, ../../wp-content/uploads/2018/05/intro-CMAE-1080x73.jpg 1080w, ../../wp-content/uploads/2018/05/intro-CMAE-510x34.jpg 510w" sizes="(max-width: 2551px) 100vw, 2551px" />
+			
+			</div>
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_11 et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_4">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p>A quarant&#8217;anni dall&#8217;acquisto della sua prima auto d&#8217;epoca, il nostro socio e amico Corrado Lopresto ha organizzato a fine 2019 un Raid che avrebbe dovuto attraversare lo stivale da Palermo a Milano, passando da Bagnara Calabra, la sua città d&#8217;origine. Protagonista dell&#8217;impresa è la FIAT Balilla 3 marce, acquistata da Lopresto il 23 dicembre 1979, e ancora perfettamente funzionante, accompagnata dalle vetture d&#8217;epoca di amici e appassionati che si sono uniti lungo il percorso. Partito da Palermo il 14 dicembre 2019, il Raid si è dovuto interrompere dopo pochi giorni per motivi personali.</p>
+<p>Per completare idealmente questo percorso e arrivare a destinazione, il Raid è ripartito da Pescara venerdì 4 settembre 2020, in occasione della &#8220;Festa della Rivoluzione&#8221; dedicata a Gabriele D&#8217;Annunzio. Passando da Fermo, Ancona, Senigallia, Pesaro, Ferrara, Rovigo, Castel d&#8217;Ario (che diede i natali all&#8217;immortale Tazio Nuvolari) e Mantova, il nostro socio ha concluso il suo viaggio mercoledì 9 settembre, dove ad attenderlo ha trovato il nostro presidente Marco Galassi insieme agli amici del Club, e dove la protagonista di questa bellissima impresa rimarrà esposta per essere ammirata e celebrata a dovere.</p>
+<p><em>Complimenti Corrado!</em></p>
+<p>Foto: Corrado Lopresto e Luca Danilo Orsi</p></div>
+			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_image et_pb_image_0">
+				
+				
+				<span class="et_pb_image_wrap "><img src="../../wp-content/uploads/2020/09/118393869_1714678715361592_5477845464376985948_o.jpg" alt="" title="118393869_1714678715361592_5477845464376985948_o" srcset="../../wp-content/uploads/2020/09/118393869_1714678715361592_5477845464376985948_o.jpg 1131w, ../../wp-content/uploads/2020/09/118393869_1714678715361592_5477845464376985948_o-980x1386.jpg 980w, ../../wp-content/uploads/2020/09/118393869_1714678715361592_5477845464376985948_o-480x679.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1131px, 100vw" /></span>
+			</div><div class="et_pb_module et_pb_gallery et_pb_gallery_3  et_pb_bg_layout_light et_pb_gallery_grid">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="50"><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_0">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_1.jpg" title="Raid Lopresto Reggio Calabria - Milano_1">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_1-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_1.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_1-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_1">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_2.jpg" title="Raid Lopresto Reggio Calabria - Milano_2">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_2-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_2.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_2-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_2">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_6.jpg" title="Raid Lopresto Reggio Calabria - Milano_6">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_6-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_6.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_6-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_3">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_7.jpg" title="Raid Lopresto Reggio Calabria - Milano_7">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_7-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_7.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_7-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_4">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_20.jpg" title="Raid Lopresto Reggio Calabria - Milano_20">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_20-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_20.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_20-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_5">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_32.jpg" title="Raid Lopresto Reggio Calabria - Milano_32">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_32-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_32.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_32-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_6">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_35.jpg" title="Raid Lopresto Reggio Calabria - Milano_35">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_35-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_35.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_35-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_7">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_36.jpg" title="Raid Lopresto Reggio Calabria - Milano_36">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_36-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_36.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_36-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_8">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_37.jpg" title="Raid Lopresto Reggio Calabria - Milano_37">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_37-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_37.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_37-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_3_9">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_38.jpg" title="Raid Lopresto Reggio Calabria - Milano_38">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_38-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_38.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_38-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div></div><!-- .et_pb_gallery_items --><div class="et_pb_gallery_pagination"></div></div><!-- .et_pb_gallery --><div class="et_pb_module et_pb_gallery et_pb_gallery_4  et_pb_bg_layout_light et_pb_gallery_grid">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="40"><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_0">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_43.jpg" title="Raid Lopresto Reggio Calabria - Milano_43">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_43-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_43.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_43-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_1">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_44.jpg" title="Raid Lopresto Reggio Calabria - Milano_44">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_44-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_44.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_44-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_2">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_45.jpg" title="Raid Lopresto Reggio Calabria - Milano_45">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_45-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_45.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_45-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_3">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_46.jpg" title="Raid Lopresto Reggio Calabria - Milano_46">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_46-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_46.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_46-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_4">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_47.jpg" title="Raid Lopresto Reggio Calabria - Milano_47">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_47-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_47.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_47-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_5">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_53.jpg" title="Raid Lopresto Reggio Calabria - Milano_53">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_53-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_53.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_53-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_6">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_56.jpg" title="Raid Lopresto Reggio Calabria - Milano_56">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_56-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_56.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_56-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_7">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_57.jpg" title="Raid Lopresto Reggio Calabria - Milano_57">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_57-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_57.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_57-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_8">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_59.jpg" title="Raid Lopresto Reggio Calabria - Milano_59">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_59-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_59.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_59-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_4_9">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_60.jpg" title="Raid Lopresto Reggio Calabria - Milano_60">
+					<img src="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_60-400x284.jpg" srcset="../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_60.jpg 479w, ../../wp-content/uploads/2020/09/Raid-Lopresto-Reggio-Calabria-Milano_60-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div></div><!-- .et_pb_gallery_items --><div class="et_pb_gallery_pagination"></div></div><!-- .et_pb_gallery -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --></p>
+				
+					</article> <!-- .et_pb_post -->
+			
+					<article id="post-38382" class="et_pb_post post-38382 post type-post status-publish format-standard has-post-thumbnail hentry category-gallery">
+
+											<a class="entry-featured-image-url" href="../../gita-in-lomellina/index.html">
+								<img src="../../wp-content/uploads/2020/07/image00001-1080x675.jpeg" alt="GITA IN LOMELLINA" class="" width='1080' height='675' srcset="../../wp-content/uploads/2020/07/image00001-980x1307.jpeg 980w, ../../wp-content/uploads/2020/07/image00001-480x640.jpeg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" />							</a>
+					
+															<h2 class="entry-title"><a href="../../gita-in-lomellina/index.html">GITA IN LOMELLINA</a></h2>
+					
+					<p class="post-meta"><span class="published">Lug 9, 2020</span> | <a href="index.html" rel="category tag">Gallery</a></p><p><div class="et_pb_section et_pb_section_13 et_animated et_pb_fullwidth_section et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_module et_pb_fullwidth_image et_pb_fullwidth_image_4">
+				
+				
+				<img src="../../wp-content/uploads/2018/05/intro-CMAE.jpg" alt="" title="" srcset="../../wp-content/uploads/2018/05/intro-CMAE.jpg 2551w, ../../wp-content/uploads/2018/05/intro-CMAE-300x20.jpg 300w, ../../wp-content/uploads/2018/05/intro-CMAE-768x52.jpg 768w, ../../wp-content/uploads/2018/05/intro-CMAE-1024x69.jpg 1024w, ../../wp-content/uploads/2018/05/intro-CMAE-600x40.jpg 600w, ../../wp-content/uploads/2018/05/intro-CMAE-1080x73.jpg 1080w, ../../wp-content/uploads/2018/05/intro-CMAE-510x34.jpg 510w" sizes="(max-width: 2551px) 100vw, 2551px" />
+			
+			</div>
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_14 et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_5">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p>Una domenica di luglio alla scoperta della Lomellina, a bordo delle nostre amatissime moto d&#8217;epoca, e con qualche &#8220;instruso&#8221; a quattro ruote al seguito, per godersi l&#8217;estate e la libertà che solo questi gioiellini ancora molto affamati di strada sanno regalare. Nel rispetto delle norme sanitarie vigenti, e senza contravvenire comunque alla sospensione ufficiale di tutte le attività da parte dei Club federati ASI in merito all&#8217;organizzazione di raduni e altri eventi, prevista fino al 31 agosto, i nostri soci si sono ritrovati in modo indipendente per una giornata all&#8217;insegna dell&#8217;amicizia e della passione, che non conosce freni.</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_6">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_gallery et_pb_gallery_5  et_pb_bg_layout_light et_pb_gallery_grid">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="60"><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_0">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00001-1-scaled.jpeg" title="image00001">
+					<img src="../../wp-content/uploads/2020/07/image00001-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00001-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00001-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_1">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00002-1-scaled.jpeg" title="image00002">
+					<img src="../../wp-content/uploads/2020/07/image00002-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00002-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00002-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_2">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00007-1-scaled.jpeg" title="image00007">
+					<img src="../../wp-content/uploads/2020/07/image00007-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00007-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00007-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_3">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00012-1-scaled.jpeg" title="image00012">
+					<img src="../../wp-content/uploads/2020/07/image00012-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00012-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00012-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_4">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00015-1-scaled.jpeg" title="image00015">
+					<img src="../../wp-content/uploads/2020/07/image00015-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00015-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00015-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_5">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00016-1-scaled.jpeg" title="image00016">
+					<img src="../../wp-content/uploads/2020/07/image00016-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00016-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00016-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_6">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00019-1-scaled.jpeg" title="image00019">
+					<img src="../../wp-content/uploads/2020/07/image00019-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00019-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00019-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_7">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00021-1-scaled.jpeg" title="image00021">
+					<img src="../../wp-content/uploads/2020/07/image00021-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00021-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00021-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_8">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00026-1-scaled.jpeg" title="image00026">
+					<img src="../../wp-content/uploads/2020/07/image00026-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00026-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00026-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_9">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00027-1-scaled.jpeg" title="image00027">
+					<img src="../../wp-content/uploads/2020/07/image00027-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00027-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00027-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_10">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00029-1-scaled.jpeg" title="image00029">
+					<img src="../../wp-content/uploads/2020/07/image00029-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00029-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00029-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_11">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00032-1-scaled.jpeg" title="image00032">
+					<img src="../../wp-content/uploads/2020/07/image00032-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00032-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00032-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_12">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00033-1-scaled.jpeg" title="image00033">
+					<img src="../../wp-content/uploads/2020/07/image00033-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00033-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00033-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_13">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00040-1-scaled.jpeg" title="image00040">
+					<img src="../../wp-content/uploads/2020/07/image00040-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00040-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00040-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_14">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00044-1-scaled.jpeg" title="image00044">
+					<img src="../../wp-content/uploads/2020/07/image00044-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00044-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00044-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_15">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00046-1-scaled.jpeg" title="image00046">
+					<img src="../../wp-content/uploads/2020/07/image00046-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00046-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00046-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_16">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00049-1-scaled.jpeg" title="image00049">
+					<img src="../../wp-content/uploads/2020/07/image00049-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00049-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00049-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_17">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00050-1-scaled.jpeg" title="image00050">
+					<img src="../../wp-content/uploads/2020/07/image00050-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00050-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00050-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_18">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00051-1-scaled.jpeg" title="image00051">
+					<img src="../../wp-content/uploads/2020/07/image00051-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00051-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00051-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_19">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00054-1-scaled.jpeg" title="image00054">
+					<img src="../../wp-content/uploads/2020/07/image00054-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00054-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00054-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_20">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00055-1-scaled.jpeg" title="image00055">
+					<img src="../../wp-content/uploads/2020/07/image00055-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00055-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00055-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_21">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00057-1-scaled.jpeg" title="image00057">
+					<img src="../../wp-content/uploads/2020/07/image00057-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00057-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00057-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_22">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00058-1-scaled.jpeg" title="image00058">
+					<img src="../../wp-content/uploads/2020/07/image00058-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00058-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00058-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_23">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00061-1-scaled.jpeg" title="image00061">
+					<img src="../../wp-content/uploads/2020/07/image00061-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00061-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00061-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_24">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00062-1-scaled.jpeg" title="image00062">
+					<img src="../../wp-content/uploads/2020/07/image00062-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00062-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00062-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_25">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00064-1-scaled.jpeg" title="image00064">
+					<img src="../../wp-content/uploads/2020/07/image00064-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00064-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00064-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_26">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00065-1-scaled.jpeg" title="image00065">
+					<img src="../../wp-content/uploads/2020/07/image00065-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00065-1-scaled.jpeg 479w, ../../wp-content/uploads/2020/07/image00065-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_27">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00976-1.jpeg" title="image00976">
+					<img src="../../wp-content/uploads/2020/07/image00976-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00976-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00976-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_28">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00977-1.jpeg" title="image00977">
+					<img src="../../wp-content/uploads/2020/07/image00977-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00977-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00977-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_29">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00978-1.jpeg" title="image00978">
+					<img src="../../wp-content/uploads/2020/07/image00978-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00978-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00978-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_30">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00979-1.jpeg" title="image00979">
+					<img src="../../wp-content/uploads/2020/07/image00979-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00979-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00979-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_31">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00980-1.jpeg" title="image00980">
+					<img src="../../wp-content/uploads/2020/07/image00980-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00980-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00980-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_32">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00981-1.jpeg" title="image00981">
+					<img src="../../wp-content/uploads/2020/07/image00981-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00981-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00981-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_33">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00982-1.jpeg" title="image00982">
+					<img src="../../wp-content/uploads/2020/07/image00982-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00982-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00982-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_34">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00983-1.jpeg" title="image00983">
+					<img src="../../wp-content/uploads/2020/07/image00983-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00983-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00983-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_35">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00984-1.jpeg" title="image00984">
+					<img src="../../wp-content/uploads/2020/07/image00984-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00984-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00984-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_36">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00985-1.jpeg" title="image00985">
+					<img src="../../wp-content/uploads/2020/07/image00985-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00985-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00985-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_37">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00986-1.jpeg" title="image00986">
+					<img src="../../wp-content/uploads/2020/07/image00986-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00986-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00986-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_38">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00989-1.jpeg" title="image00989">
+					<img src="../../wp-content/uploads/2020/07/image00989-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00989-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00989-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_39">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00990-1.jpeg" title="image00990">
+					<img src="../../wp-content/uploads/2020/07/image00990-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00990-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00990-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_40">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00991-1.jpeg" title="image00991">
+					<img src="../../wp-content/uploads/2020/07/image00991-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00991-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00991-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_41">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00992-1.jpeg" title="image00992">
+					<img src="../../wp-content/uploads/2020/07/image00992-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00992-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00992-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_42">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00993-1.jpeg" title="image00993">
+					<img src="../../wp-content/uploads/2020/07/image00993-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00993-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00993-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_43">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00994-1.jpeg" title="image00994">
+					<img src="../../wp-content/uploads/2020/07/image00994-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00994-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00994-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_44">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00995-1.jpeg" title="image00995">
+					<img src="../../wp-content/uploads/2020/07/image00995-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00995-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00995-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_45">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00996-1.jpeg" title="image00996">
+					<img src="../../wp-content/uploads/2020/07/image00996-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00996-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00996-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_46">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00997-1.jpeg" title="image00997">
+					<img src="../../wp-content/uploads/2020/07/image00997-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00997-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00997-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_47">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image00998-1.jpeg" title="image00998">
+					<img src="../../wp-content/uploads/2020/07/image00998-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image00998-1.jpeg 479w, ../../wp-content/uploads/2020/07/image00998-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_48">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/image01011-1.jpeg" title="image01011">
+					<img src="../../wp-content/uploads/2020/07/image01011-1-400x284.jpeg" srcset="../../wp-content/uploads/2020/07/image01011-1.jpeg 479w, ../../wp-content/uploads/2020/07/image01011-1-400x284.jpeg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_49">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-33-5.jpg" title="PHOTO-2020-07-05-19-11-33 (5)">
+					<img src="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-33-5-400x284.jpg" srcset="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-33-5.jpg 479w, ../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-33-5-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_50">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-1.jpg" title="PHOTO-2020-07-05-19-11-34 (1)">
+					<img src="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-1-400x284.jpg" srcset="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-1.jpg 479w, ../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-1-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_51">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-2.jpg" title="PHOTO-2020-07-05-19-11-34 (2)">
+					<img src="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-2-400x284.jpg" srcset="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-2.jpg 479w, ../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-2-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_52">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-3.jpg" title="PHOTO-2020-07-05-19-11-34 (3)">
+					<img src="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-3-400x284.jpg" srcset="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-3.jpg 479w, ../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-3-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_5_53">
+				<div class='et_pb_gallery_image landscape'>
+					<a href="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-4.jpg" title="PHOTO-2020-07-05-19-11-34">
+					<img src="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-4-400x284.jpg" srcset="../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-4.jpg 479w, ../../wp-content/uploads/2020/07/PHOTO-2020-07-05-19-11-34-4-400x284.jpg 480w" sizes="(max-width:479px) 479px, 100vw" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div></div><!-- .et_pb_gallery_items --><div class="et_pb_gallery_pagination"></div></div><!-- .et_pb_gallery -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --></p>
+				
+					</article> <!-- .et_pb_post -->
+			<div class="pagination clearfix">
+	<div class="alignleft"><a href="page/2/index.html" >&laquo; Post precedenti</a></div>
+	<div class="alignright"></div>
+</div>			</div> <!-- #left-area -->
+
+					</div> <!-- #content-area -->
+	</div> <!-- .container -->
+</div> <!-- #main-content -->
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				
+						<p id="footer-info">Progettato e sviluppato da   <a href="https://www.sitointerattivo.it/"><img class=" wp-image-3363 alignnone" src="../../../../www.sitointerattivo.it/wp-content/uploads/2020/04/SitointerAttivoWeb.png" alt="" width="139" height="13"></a></p>
+					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+
+	</div> <!-- #page-container -->
+
+	<!--googleoff: all--><div id="cookie-law-info-bar"><span>Questo sito usa cookies per migliorare la tua esperienza. <a href='../../privacy/index.html' id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  style="display:inline-block;" >Maggiori informazioni</a>. <a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">Accetta</a>  <a role='button' tabindex='0' id="cookie_action_close_header_reject"  class="small cli-plugin-button cli-plugin-main-button cookie_action_close_header_reject cli_action_button"  data-cli_action="reject">Rifiuto</a> </span></div><div id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div><div class="cli-modal" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+    <div class="cli-modal-content cli-bar-popup">
+      <button type="button" class="cli-modal-close" id="cliModalClose">
+        <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+        <span class="wt-cli-sr-only">Chiudi</span>
+      </button>
+      <div class="cli-modal-body">
+        <div class="cli-container-fluid cli-tab-container">
+    <div class="cli-row">
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+            <div class="cli-privacy-overview">
+                                                   
+                <div class="cli-privacy-content">
+                    <div class="cli-privacy-content-text"></div>
+                </div>
+                <a class="cli-privacy-readmore" data-readmore-text="Mostra altro" data-readless-text="Mostra meno"></a>            </div>
+        </div>  
+        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+              
+                            <div class="cli-tab-section">
+                    <div class="cli-tab-header">
+                        <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab" >
+                            Necessario 
+                        </a>
+                    
+                    <span class="cli-necessary-caption">Sempre attivato</span>                     </div>
+                    <div class="cli-tab-content">
+                        <div class="cli-tab-pane cli-fade" data-id="necessary">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+              
+                       
+        </div>
+    </div> 
+</div> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<script type="text/javascript">
+  /* <![CDATA[ */
+  cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#2ea3f2","border":"#444","border_on":false,"button_1_button_colour":"#ffffff","button_1_button_hover":"#cccccc","button_1_link_colour":"#2ea3f2","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"button_2_hidebar":false,"button_3_button_colour":"#ffffff","button_3_button_hover":"#cccccc","button_3_link_colour":"#2ea3f2","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":true,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+  /* ]]> */
+</script>
+<!--googleon: all-->	<script type="text/javascript">
+				var et_animation_data = [{"class":"et_pb_section_0","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_1","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_3","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_4","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_6","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_7","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_9","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_10","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_12","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_section_13","style":"slideLeft","repeat":"once","duration":"2000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+			</script>
+		<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<script type='text/javascript' src='../../wp-content/themes/Divi/includes/builder/frontend-builder/build/frontend-builder-global-functions%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/cmae.it\/cms\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/scripts%EF%B9%96ver=5.1.9.js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI%EF%B9%96ver=2.70.js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie%EF%B9%96ver=2.1.4.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/cms\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/cms\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce%EF%B9%96ver=4.1.2.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/cms\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/cms\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_408a4a6e62f5f31ffb7f57a203084119","fragment_name":"wc_fragments_408a4a6e62f5f31ffb7f57a203084119","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments%EF%B9%96ver=4.1.2.js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/monarch/js/idle-timer.min%EF%B9%96ver=1.4.12.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monarchSettings = {"ajaxurl":"https:\/\/cmae.it\/cms\/wp-admin\/admin-ajax.php","pageurl":"","stats_nonce":"c651da0ab9","share_counts":"b0dade8869","follow_counts":"b5552dc21c","total_counts":"b214f458ec","media_single":"6fd3c8845a","media_total":"a351c8d401","generate_all_window_nonce":"d31a854998","no_img_message":"No images available for sharing on this page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/monarch/js/custom%EF%B9%96ver=1.4.12.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/includes/builder/scripts/ext/jquery.mobile.custom.min%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/js/custom%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/js/smoothscroll%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/includes/builder/scripts/ext/jquery.fitvids%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/includes/builder/scripts/ext/waypoints.min%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/includes/builder/scripts/ext/jquery.magnific-popup%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/cmae.it\/cms\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/cmae.it\/cms\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/cmae.it\/cms\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"9b60d4b507","subscription_failed":"Si prega di verificare i campi di seguito per assicurarsi di aver inserito le informazioni corrette.","et_ab_log_nonce":"4ec9058ffb","fill_message":"Compila i seguenti campi:","contact_error_message":"Per favore, correggi i seguenti errori:","invalid":"E-mail non valido","captcha":"Captcha","prev":"Indietro","previous":"Precedente","next":"Accanto","wrong_captcha":"Hai inserito un numero errato nei captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"39558","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/includes/builder/frontend-builder/build/frontend-builder-scripts%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/core/admin/js/common%EF%B9%96ver=4.4.7.js'></script>
+<script type='text/javascript' src='../../wp-includes/js/wp-embed%EF%B9%96ver=5.4.8.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/Divi/includes/builder/scripts/ext/jquery.hashchange%EF%B9%96ver=4.4.7.js'></script>
+<style id="et-builder-module-design-39558-cached-inline-styles">.et_pb_section_0.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_1.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_3.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_4.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_6.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_7.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_9.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_10.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_12.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_section_13.et_pb_section{margin-top:30px;margin-right:-400px;margin-left:-100px}.et_pb_image_0{text-align:left;margin-left:0}@media only screen and (max-width:980px){.et_pb_section_0.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_1.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_3.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_4.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_6.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_7.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_9.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_10.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_12.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_section_13.et_pb_section{margin-top:80px;margin-right:-400px;margin-left:-100px}.et_pb_image_0{margin-left:auto;margin-right:auto}}@media only screen and (max-width:767px){.et_pb_section_0.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_1.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_3.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_4.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_6.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_7.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_9.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_10.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_12.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_section_13.et_pb_section{margin-top:90px;margin-right:-500px;margin-left:-50px}.et_pb_image_0{margin-left:auto;margin-right:auto}}</style></body>
+</html>

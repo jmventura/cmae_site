@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<oembed><version>1.0</version><provider_name>CMAE</provider_name><provider_url>https://cmae.it/cms</provider_url><author_name>Ufficio Stampa</author_name><author_url>https://cmae.it/cms/author/ufficio-stampa/</author_url><title>12&#xB0; TROFEO MILANO, 6 ottobre 2018 - Album 1 - CMAE</title><type>rich</type><width>600</width><height>338</height><html>&lt;blockquote class="wp-embedded-content"&gt;&lt;a href="https://cmae.it/cms/12-trofeo-milano-6-ottobre-2018-6/"&gt;12&#xB0; TROFEO MILANO, 6 ottobre 2018 &#x2013; Album 1&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script type='text/javascript'&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+/**
+ * WordPress inline HTML embed
+ *
+ * @since 4.4.0
+ * @output wp-includes/js/wp-embed.js
+ *
+ * This file cannot have ampersands in it. This is to ensure
+ * it can be embedded in older versions of WordPress.
+ * See https://core.trac.wordpress.org/changeset/35708.
+ */
+(function ( window, document ) {
+	'use strict';
+
+	var supportedBrowser = false,
+		loaded = false;
+
+		if ( document.querySelector ) {
+			if ( window.addEventListener ) {
+				supportedBrowser = true;
+			}
+		}
+
+	/** @namespace wp */
+	window.wp = window.wp || {};
+
+	if ( !! window.wp.receiveEmbedMessage ) {
+		return;
+	}
+
+	window.wp.receiveEmbedMessage = function( e ) {
+		var data = e.data;
+
+		if ( ! data ) {
+			return;
+		}
+
+		if ( ! ( data.secret || data.message || data.value ) ) {
+			return;
+		}
+
+		if ( /[^a-zA-Z0-9]/.test( data.secret ) ) {
+			return;
+		}
+
+		var iframes = document.querySelectorAll( 'iframe[data-secret="' + data.secret + '"]' ),
+			blockquotes = document.querySelectorAll( 'blockquote[data-secret="' + data.secret + '"]' ),
+			i, source, height, sourceURL, targetURL;
+
+		for ( i = 0; i &lt; blockquotes.length; i++ ) {
+			blockquotes[ i ].style.display = 'none';
+		}
+
+		for ( i = 0; i &lt; iframes.length; i++ ) {
+			source = iframes[ i ];
+
+			if ( e.source !== source.contentWindow ) {
+				continue;
+			}
+
+			source.removeAttribute( 'style' );
+
+			/* Resize the iframe on request. */
+			if ( 'height' === data.message ) {
+				height = parseInt( data.value, 10 );
+				if ( height &gt; 1000 ) {
+					height = 1000;
+				} else if ( ~~height &lt; 200 ) {
+					height = 200;
+				}
+
+				source.height = height;
+			}
+
+			/* Link to a specific URL on request. */
+			if ( 'link' === data.message ) {
+				sourceURL = document.createElement( 'a' );
+				targetURL = document.createElement( 'a' );
+
+				sourceURL.href = source.getAttribute( 'src' );
+				targetURL.href = data.value;
+
+				/* Only continue if link hostname matches iframe's hostname. */
+				if ( targetURL.host === sourceURL.host ) {
+					if ( document.activeElement === source ) {
+						window.top.location.href = data.value;
+					}
+				}
+			}
+		}
+	};
+
+	function onLoad() {
+		if ( loaded ) {
+			return;
+		}
+
+		loaded = true;
+
+		var isIE10 = -1 !== navigator.appVersion.indexOf( 'MSIE 10' ),
+			isIE11 = !!navigator.userAgent.match( /Trident.*rv:11\./ ),
+			iframes = document.querySelectorAll( 'iframe.wp-embedded-content' ),
+			iframeClone, i, source, secret;
+
+		for ( i = 0; i &lt; iframes.length; i++ ) {
+			source = iframes[ i ];
+
+			if ( ! source.getAttribute( 'data-secret' ) ) {
+				/* Add secret to iframe */
+				secret = Math.random().toString( 36 ).substr( 2, 10 );
+				source.src += '#?secret=' + secret;
+				source.setAttribute( 'data-secret', secret );
+			}
+
+			/* Remove security attribute from iframes in IE10 and IE11. */
+			if ( ( isIE10 || isIE11 ) ) {
+				iframeClone = source.cloneNode( true );
+				iframeClone.removeAttribute( 'security' );
+				source.parentNode.replaceChild( iframeClone, source );
+			}
+		}
+	}
+
+	if ( supportedBrowser ) {
+		window.addEventListener( 'message', window.wp.receiveEmbedMessage, false );
+		document.addEventListener( 'DOMContentLoaded', onLoad, false );
+		window.addEventListener( 'load', onLoad, false );
+	}
+})( window, document );
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;iframe sandbox="allow-scripts" security="restricted" src="https://cmae.it/cms/12-trofeo-milano-6-ottobre-2018-6/embed/" width="600" height="338" title="&#x201C;12&#xB0; TROFEO MILANO, 6 ottobre 2018 &#x2013; Album 1&#x201D; &#x2014; CMAE" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"&gt;&lt;/iframe&gt;</html><thumbnail_url>https://cmae.it/cms/wp-content/uploads/2018/10/IMG_20181006_215145.jpg</thumbnail_url><thumbnail_width>425</thumbnail_width><thumbnail_height>319</thumbnail_height><description>[et_pb_section bb_built=&#x201D;1&#x2033; fullwidth=&#x201D;on&#x201D; specialty=&#x201D;off&#x201D; next_background_color=&#x201D;#000000&#x2033; _builder_version=&#x201D;3.19.7&#x2033; animation_style=&#x201D;slide&#x201D; animation_duration=&#x201D;2000ms&#x201D; animation_direction=&#x201D;left&#x201D; custom_margin=&#x201D;30px|-400px||-100px&#x201D; custom_margin_phone=&#x201D;90px|-500px||-50px&#x201D; custom_margin_last_edited=&#x201D;on|tablet&#x201D; custom_margin_tablet=&#x201D;80px|-400px||-100px&#x201D; global_module=&#x201D;29313&#x2033;][et_pb_fullwidth_image global_parent=&#x201D;29313&#x2033; _builder_version=&#x201D;3.19.7&#x2033; src=&#x201D;https://cmae.it/cms/wp-content/uploads/2019/02/CMAE-60.jpg&#x201D; /][/et_pb_section][et_pb_section bb_built=&#x201D;1&#x2033; prev_background_color=&#x201D;#000000&#x2033;][et_pb_row][et_pb_column type=&#x201D;4_4&#x2033;][et_pb_text _builder_version=&#x201D;3.19.7&#x2033;] Foto: Valerio Alfonzetti [/et_pb_text][et_pb_gallery _builder_version=&#x201D;3.19.7&#x2033; gallery_ids=&#x201D;31913,31914,31915,31916,31917,31918,31919,31920,31921,31922,31923,31924,31925,31926,31927,31928,31929,31930,31931,31933,31934,31947,31950,31952,31955,31959,31962,31964,31965,31967,31968,31969,31972,31975,31976,31977,31978,31979,31980,31981,31982,31983,31984,31985,31987,31988,31990,31991,31992,31994,31995,31996,31998,31999,32000,32001,32003,32005,32006,32007,32008,32011,32012,32013,32014,32015,32016,32017,32019,32020,32021,32023,32024,32025,32026,32027,32028,32029,32030,32032,32033,32035,32036,32038,32039,32040,32042,32043,32047,32048,32049,32051,32052,32053,32056,32057,32058,32059,32060,32063,32064,32069,32070,32072,32073,32074,32076,32085,32087,32088,32089,32090,32091,32092,32093,32094,32095,32097,32098,32099,32100,32101,32102,32104,32105,32106,32108,32109,32110,32111,32112,32114,32115,32117,32118,32120,32121,32122,32123,32124,32125,32127,32130,32132,32133,32134,32135,32136,32137,32138,32139,32140,32141,32147,32149,32150,32154,32156,32157,32159,32160,32162,32164,32166,32167,31870,31871,31872,31873,31874,31875,31876,31877,31878,31879,31880,31882,31883,31884,31885,31886,31887,31888,31889,31890,31891,31893,31894,31895,31896,31897,31898,31899,31900,31903,31904,31907,31908,31909,31910,31911,31912&#x2033; posts_number=&#x201D;20&#x2033; show_title_and_caption=&#x201D;off&#x201D; hover_overlay_color=&#x201D;rgba(255,255,255,0.9)&#x201D; /][/et_pb_column][/et_pb_row][/et_pb_section]</description></oembed>
